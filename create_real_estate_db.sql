@@ -1,4 +1,7 @@
-SET FOREIGN_KEY_CHECKS=0; ensure clean DROP
+CREATE DATABASE IF NOT EXISTS RealEstateDB;
+USE RealEstateDB;
+
+SET FOREIGN_KEY_CHECKS=0; -- ensure clean DROP
 
 -- DROP STATEMENTS
 DROP TABLE IF EXISTS Works_With;
@@ -12,8 +15,6 @@ DROP TABLE IF EXISTS Property;
 
 SET FOREIGN_KEY_CHECKS=1; -- reenable checks
 
-CREATE DATABASE IF NOT EXISTS RealEstateDB;
-USE RealEstateDB;
 
 -- CREATION
 
@@ -53,7 +54,7 @@ CREATE TABLE Firm (
 CREATE TABLE Agent (
     agentId INTEGER NOT NULL,
     name VARCHAR(30) NOT NULL,
-    phone CHAR(12) NOT NULL,
+    phone VARCHAR(15) NOT NULL,
     firmId INTEGER NOT NULL,
     dateStarted DATE NOT NULL,
     PRIMARY KEY (agentId),
@@ -77,7 +78,7 @@ CREATE TABLE Listings (
 CREATE TABLE Buyer (
     id INTEGER NOT NULL,
     name VARCHAR(30) NOT NULL,
-    phone CHAR(12) NOT NULL,
+    phone VARCHAR(15) NOT NULL,
     propertyType CHAR(20) NOT NULL,
     bedrooms INTEGER NULL,
     bathrooms INTEGER NULL,
