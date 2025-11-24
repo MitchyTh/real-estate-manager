@@ -2,14 +2,14 @@ CREATE DATABASE IF NOT EXISTS RealEstateDB;
 USE RealEstateDB;
 
 --DROP STATEMENTS
-DROP TABLE IF EXISTS Property;
-DROP TABLE IF EXISTS House;
-DROP TABLE IF EXISTS BusinessProperty;
-DROP TABLE IF EXISTS Firm;
-DROP TABLE IF EXISTS Agent;
-DROP TABLE IF EXISTS Listing;
-DROP TABLE IF EXISTS Buyer;
 DROP TABLE IF EXISTS Works_With;
+DROP TABLE IF EXISTS Buyer;
+DROP TABLE IF EXISTS Listings;
+DROP TABLE IF EXISTS Agent;
+DROP TABLE IF EXISTS Firm;
+DROP TABLE IF EXISTS BusinessProperty;
+DROP TABLE IF EXISTS House;
+DROP TABLE IF EXISTS Property;
 
 --CREATION
 CREATE TABLE Property(
@@ -73,10 +73,10 @@ CREATE TABLE Buyer (
     id INTEGER NOT NULL,
     name VARCHAR(30) NOT NULL,
     phone CHAR(12) NOT NULL,
-    propertyType CHAR(20) NOT NULL, 
-    bedrooms INTEGER NULL,          
-    bathrooms INTEGER NULL,        
-    businessPropertyType CHAR(20) NULL, 
+    propertyType CHAR(20) NOT NULL,
+    bedrooms INTEGER NULL,
+    bathrooms INTEGER NULL,
+    businessPropertyType CHAR(20) NULL,
     minimumPreferredPrice INTEGER NOT NULL,
     maximumPreferredPrice INTEGER NOT NULL,
     PRIMARY KEY (id),
@@ -91,7 +91,7 @@ CREATE TABLE Works_With (
     ON UPDATE CASCADE ON DELETE CASCADE,
     FOREIGN KEY (agentId) REFERENCES Agent(agentId)
     ON UPDATE CASCADE ON DELETE CASCADE
-); 
+);
 
 INSERT INTO Firm (id, name, address) VALUES
 (101, 'Kanto Realty', 'Pallet Town'),
@@ -159,5 +159,5 @@ INSERT INTO Works_With (buyerId, agentId) VALUES
 (204, 2),
 (205, 4),
 (206, 5),
-(203, 5), 
+(203, 5),
 (201, 3);
