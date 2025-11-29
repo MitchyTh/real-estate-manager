@@ -1,0 +1,86 @@
++-----------------------+
+| address               |
++-----------------------+
+| Cerulean City Cottage |
+| Lavender Tower Flat   |
+| Pewter Gym Loft       |
+| Viridian Forest Cabin |
++-----------------------+
+
++-----------------------+-----------+
+| address               | mlsNumber |
++-----------------------+-----------+
+| Cerulean City Cottage |      5002 |
+| Lavender Tower Flat   |      5004 |
+| Pewter Gym Loft       |      5003 |
+| Viridian Forest Cabin |      5001 |
++-----------------------+-----------+
+
++-----------------------+
+| address               |
++-----------------------+
+| Cerulean City Cottage |
+| Viridian Forest Cabin |
++-----------------------+
+
++-----------------------+--------+
+| address               | price  |
++-----------------------+--------+
+| Cerulean City Cottage | 240000 |
+| Viridian Forest Cabin | 180000 |
++-----------------------+--------+
+
++-----------------------+--------+
+| address               | price  |
++-----------------------+--------+
+| Slateport Office Park | 520000 |
+| Saffron Office Plaza  | 450000 |
++-----------------------+--------+
+
++---------+-------------------+---------------+------------------+-------------+
+| agentId | name              | phone         | firmName         | dateStarted |
++---------+-------------------+---------------+------------------+-------------+
+|       1 | Ash Ketchum       | 555-PIKA-001  | Kanto Realty     | 2021-03-01  |
+|       2 | Misty Waterflower | 555-STARM-002 | Johto Homes      | 2020-06-15  |
+|       3 | Brock Harrison    | 555-ONIX-003  | Kanto Realty     | 2019-01-20  |
+|       4 | May Maple         | 555-TORC-004  | Hoenn Properties | 2022-09-05  |
+|       5 | Dawn Berlitz      | 555-PIPL-005  | Sinnoh Brokers   | 2018-11-12  |
+|       6 | Iris Drayden      | 555-AXEW-006  | Unova Estates    | 2017-04-30  |
++---------+-------------------+---------------+------------------+-------------+
+
++-----------------------+---------------+--------+
+| address               | ownerName     | price  |
++-----------------------+---------------+--------+
+| Viridian Forest Cabin | Professor Oak | 180000 |
++-----------------------+---------------+--------+
+
++-------------------+-----------+
+| AgentName         | BuyerName |
++-------------------+-----------+
+| Ash Ketchum       | Red       |
+| Brock Harrison    | Red       |
+| Brock Harrison    | Blue      |
+| Dawn Berlitz      | Green     |
+| Dawn Berlitz      | Crystal   |
+| Iris Drayden      | Green     |
+| May Maple         | Gold      |
+| Misty Waterflower | Silver    |
++-------------------+-----------+
+
++---------+-------------+
+| agentId | totalBuyers |
++---------+-------------+
+|       1 |           1 |
+|       2 |           1 |
+|       3 |           2 |
+|       4 |           1 |
+|       5 |           2 |
+|       6 |           1 |
++---------+-------------+
+
++-----------------------+--------+
+| address               | price  |
++-----------------------+--------+
+| Cerulean City Cottage | 240000 |
+| Viridian Forest Cabin | 180000 |
++-----------------------+--------+
